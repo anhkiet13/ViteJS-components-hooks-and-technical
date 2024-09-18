@@ -1,5 +1,13 @@
-import {ForgotPass, Login} from "../pages/login/index";
-import {FooterPage, HeaderPage, MenuPage, HomePage, CustomeHookPage} from "../pages/main/index";
+import { ForgotPass, Login } from "../pages/login/index";
+import { 
+    FooterPage, 
+    HeaderPage, 
+    MenuPage, 
+    HomePage, 
+    CustomeHookPage,
+    BasicCRUD,
+    BasicUseConText
+} from "../pages/main/index";
 
 
 export const LoginRoutes = [
@@ -33,5 +41,13 @@ export const MainRoutes = [
     {
         path: "/custome-hooks",
         element: CustomeHookPage
+    },
+    {
+        path: "/basic-useContext",
+        element: BasicUseConText
+    },
+    {
+        path: "/basic-crud",
+        element: BasicCRUD
     }
 ];

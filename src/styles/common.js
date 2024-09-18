@@ -19,4 +19,12 @@ export const buttonColor = [
         title: "custome-hooks",
         color: "#BD9262"
     },
+    {
+        title: "basic-useContext",
+        color: "#BD62A9"
+    },
+    {
+        title: "basic-crud",
+        color: "#CF4444"
+    },
 ];
