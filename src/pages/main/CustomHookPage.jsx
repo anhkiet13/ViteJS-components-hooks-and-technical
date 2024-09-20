@@ -1,15 +1,18 @@
 import React, { useCallback, useEffect, useState, useId, useRef } from "react";
 
-const CustomeHookPage = () => {
+const CustomHookPage = () => {
   // State for debounce hook
   const [check, setCheck] = useState("");
   const [value, setValue] = useState("");
   const debouncedValue = useDebounce(value, 10000);
+
   // State for copy clipboard hook
   const [isCopied, copy] = useCopyToClipboard("Text to copy!");
+
   // useId hook to create single id for react component
   const id = useId();
-  // Detect click outside component (very useful in create custome Popup)
+
+  // Detect click outside component (very useful in create custom Popup)
   const clickMeDivRef = useRef(null);
 
   useEffect(() => {
@@ -59,7 +62,7 @@ const CustomeHookPage = () => {
   );
 };
 
-export default CustomeHookPage;
+export default CustomHookPage;
 
 // Debounce hook
 const useDebounce = (value, delay) => {
@@ -82,6 +85,9 @@ const useDebounce = (value, delay) => {
 const useCopyToClipboard = (content) => {
   const [isCopied, setIsCopied] = useState(false);
 
+  // Thực hiện copy và hiện toggle isCopied là true trong tg ngắn 1,25s khi chuyển thành false
+  // để tắt toggle 
+  // trả về hàm copy cho action click vào và copy
   const copy = useCallback(() => {
     navigator.clipboard
       .writeText(content)

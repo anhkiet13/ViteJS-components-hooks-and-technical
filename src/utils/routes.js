@@ -4,9 +4,10 @@ import {
     HeaderPage, 
     MenuPage, 
     HomePage, 
-    CustomeHookPage,
+    CustomHookPage,
     BasicCRUD,
-    BasicUseConText
+    BasicUseConText,
+    DemoPage
 } from "../pages/main/index";
 
 
@@ -39,8 +40,8 @@ export const MainRoutes = [
         element: FooterPage
     },
     {
-        path: "/custome-hooks",
-        element: CustomeHookPage
+        path: "/custom-hooks",
+        element: CustomHookPage
     },
     {
         path: "/basic-useContext",
@@ -49,5 +50,9 @@ export const MainRoutes = [
     {
         path: "/basic-crud",
         element: BasicCRUD
+    },
+    {
+        path: "/demo",
+        element: DemoPage
     }
 ];

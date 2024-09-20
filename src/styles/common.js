@@ -27,4 +27,8 @@ export const buttonColor = [
         title: "basic-crud",
         color: "#CF4444"
     },
+    {
+        title: "demo",
+        color: "#5E5B5BFF"
+    },
 ];
